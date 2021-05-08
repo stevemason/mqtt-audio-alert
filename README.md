@@ -26,5 +26,5 @@ Only exact matches with MQTT messages are supported. There is NO support for ran
 Dependencies
 ------------
 
-mpg123 (can be installed with any Linux distro package manager)
-paho-mqtt (can be installed with pip)
+* mpg123 (can be installed with any Linux distro package manager)
+* paho-mqtt (can be installed with pip)

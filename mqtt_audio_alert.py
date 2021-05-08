@@ -43,7 +43,7 @@ def play_alert(sound):
     sound - name of sound from config.js
 
     Returns:
-    mqtt return code
+    mpg123 return code
     """
 
     if config.audiodevice == '':  # use default output device
