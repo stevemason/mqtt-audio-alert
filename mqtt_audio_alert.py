@@ -1,3 +1,17 @@
+# Copyright 2021 Steve Mason
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+
+#     http://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 """Play audio alerts triggered by MQTT messages."""
 import paho.mqtt.client as mqtt
 import config
@@ -27,7 +41,7 @@ def play_alert(sound):
 
     Parameters:
     sound - name of sound from config.js
-    
+
     Returns:
     mqtt return code
     """
@@ -50,7 +64,7 @@ def time_check():
     Returns:
     True/False
     """
-    
+
     allowed = False
     time_now = time.strftime('%H:%M', time.localtime())
     for times in config.active_times:
