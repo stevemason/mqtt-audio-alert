@@ -1,0 +1,13 @@
+/__pycache__/
+/.Trash-*/
+*.py[cod]
+/.vscode/
+/mqttaudio-env/
+/typings/
+config.py
+root-ca.crt
+/.scannerwork/
+*.log
+sonar-project.properties
+/sounds/
+bandit.output
